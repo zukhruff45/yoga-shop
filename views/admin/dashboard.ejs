@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+
+<h1>Dashboard</h1>
+
+<p>Total Products: <%= products.length %></p>
+
+<a href="/admin/products">View Products</a>
+
+<ul>
+  <% products.forEach(p => { %>
+    <li><%= p.name %> - <%= p.price %></li>
+  <% }) %>
+</ul>
+
+</body>
+</html>

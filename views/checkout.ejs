@@ -1,0 +1,59 @@
+<div class="checkout-page">
+
+  <div class="checkout-card">
+
+    <h2 class="checkout-title">Secure Checkout</h2>
+    <p class="checkout-subtitle">
+      Complete your order safely and securely
+    </p>
+
+    <form class="checkout-form">
+
+      <!-- CUSTOMER INFO -->
+      <div class="checkout-section">
+        <h3>Customer Information</h3>
+
+        <div class="form-row">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+        </div>
+
+        <input type="text" placeholder="Phone Number" required>
+      </div>
+
+      <!-- SHIPPING -->
+      <div class="checkout-section">
+        <h3>Shipping Address</h3>
+
+        <input type="text" placeholder="Street Address" required>
+
+        <div class="form-row">
+          <input type="text" placeholder="City" required>
+          <input type="text" placeholder="Postal Code" required>
+        </div>
+      </div>
+
+      <!-- PAYMENT -->
+      <div class="checkout-section">
+        <h3>Payment Method</h3>
+
+        <select required>
+          <option value="">Select Payment Method</option>
+          <option>Cash on Delivery</option>
+          <option>Credit / Debit Card</option>
+          <option>EasyPaisa / JazzCash</option>
+        </select>
+      </div>
+
+      <!-- SUBMIT -->
+      <button type="submit" class="checkout-btn">
+        Place Order
+      </button>
+
+    </form>
+
+    <a href="/products" class="back-link">← Continue Shopping</a>
+
+  </div>
+
+</div>

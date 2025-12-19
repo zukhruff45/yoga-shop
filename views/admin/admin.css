@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.admin-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+.admin-sidebar {
+  width: 220px;
+  background: #2e7d32;
+  padding: 20px;
+}
+
+.admin-sidebar h2 {
+  color: #fff;
+}
+
+.admin-sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.admin-content {
+  padding: 30px;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 10px;
+}

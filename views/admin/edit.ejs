@@ -1,0 +1,10 @@
+<h1>Edit Product</h1>
+
+<form method="POST" action="/admin/products/<%= product._id %>?_method=PUT">
+  <input name="name" value="<%= product.name %>" required>
+  <input name="price" value="<%= product.price %>" required>
+  <input name="category" value="<%= product.category %>">
+  <button>Update</button>
+</form>
+
+<a href="/admin">Back</a>

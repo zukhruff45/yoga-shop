@@ -1,0 +1,7 @@
+<h1>Edit Product</h1>
+
+<form action="/admin/products/<%= product._id %>?_method=PUT" method="POST">
+  <input name="name" value="<%= product.name %>">
+  <input name="price" value="<%= product.price %>">
+  <button>Update</button>
+</form>

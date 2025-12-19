@@ -1,0 +1,19 @@
+<h1>Admin Dashboard</h1>
+
+<a href="/admin/products/new">➕ Add Product</a>
+
+<hr>
+
+<ul>
+  <% products.forEach(p => { %>
+    <li>
+      <strong><%= p.name %></strong> - <%= p.price %>
+
+      <a href="/admin/products/<%= p._id %>/edit">Edit</a>
+
+      <form action="/admin/products/<%= p._id %>?_method=DELETE" method="POST" style="display:inline;">
+        <button type="submit">Delete</button>
+      </form>
+    </li>
+  <% }) %>
+</ul>
